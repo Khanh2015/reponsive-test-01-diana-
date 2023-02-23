@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <title>Test 01</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+      .active {
+        top: 70px;
+      }
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p-4 md:p-5 xl:px-0 xl:py-5 mx-auto">
+      <header class="flex justify-between items-center md:flex-col">
+        <div class="logo w-[79px] md:w-[113px]">
+          <a href="" class="">
+            <img src="/img/logo.png" alt="" class="" />
+          </a>
+        </div>
+        <nav
+          class="menu fixed top-[-100%] left-0 w-full md:w-fit py-3 md:py-0 text-center bg-slate-500 md:bg-transparent duration-500 md:static md:mt-5"
+        >
+          <ul
+            class="md:flex md:justify-center md:items-center md:gap-4 xl:gap-8"
+          >
+            <li><a href="" class="link-menu">Game</a></li>
+            <li><a href="" class="link-menu">Champions</a></li>
+            <li><a href="" class="link-menu">News</a></li>
+            <li><a href="" class="link-menu">Patch Notes</a></li>
+            <li><a href="" class="link-menu">Discover</a></li>
+            <li><a href="" class="link-menu">Esports</a></li>
+            <li><a href="" class="link-menu">Universe</a></li>
+          </ul>
+        </nav>
+        <div class="menu-icon md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+
+      <div class="banner mt-4 md:mt-5 xl:mt-7">
+        <a href="" class="">
+          <img src="/img/image 45.jpg" alt="" class="" />
+        </a>
+      </div>
+
+      <main class="xl:mx-4">
+        <div class="text-center mt-[32px] md:mt-10 xl:mt-16">
+          <h1 class="font-bold text-2xl md:text-[32px] xl:text-5xl">DIANA</h1>
+          <p class="text-xs md:text-xl text-[#848484] mt-2 md:mt-3 xl:mt-4">
+            SCORN OF THE MOON
+          </p>
+        </div>
+
+        <div
+          class="mt-5 md:mt-8 xl:mt-16 md:grid md:grid-cols-2 md:gap-[20px] xl:grid-cols-1 xl:gap-[64px]"
+        >
+          <div class="xl:flex xl:justify-between xl:items-center xl:gap-8">
+            <img src="/img/image 46.jpg" alt="" class="" />
+            <div class="">
+              <h2
+                class="mt-4 md:mt-5 text-sm md:text-base xl:text-2xl xl:mt-0 font-bold"
+              >
+                MOONSILVER BLADE
+              </h2>
+              <p
+                class="text-xs md:text-sm xl:text-xl mt-2 xl:mt-3 text-[#848484]"
+              >
+                Every third strike cleaves nearby enemies for an additional
+                magic damage. After casting a spell, Diana gains Attack Speed
+                for her next 3 attacks.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="mt-5 md:mt-0 xl:flex xl:justify-between xl:items-center xl:gap-8"
+          >
+            <img src="/img/image 47.jpg" alt="" class="" />
+            <div class="">
+              <h2
+                class="mt-4 md:mt-5 text-sm md:text-base xl:text-2xl xl:mt-0 font-bold"
+              >
+                MOONFALL
+              </h2>
+              <p
+                class="text-xs md:text-sm xl:text-xl mt-2 xl:mt-3 text-[#848484]"
+              >
+                Diana reveals and draws in all nearby enemies and slows them. If
+                Diana pulls in one or more enemy champions, the moonlight
+                crashes down onto her after a short delay, dealing magic damage
+                in an area around her, increased for each target beyond the
+                first pulled.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <a
+            href=""
+            class="uppercase block bg-black text-white text-center mt-5 md:mt-10 xl:mt-16 text-xs md:text-xl py-6 md:py-5 font-bold"
+            >Check out our other social channels</a
+          >
+        </div>
+
+        <div class="mt-5 md:mt-10 xl:mt-16">
+          <img src="/img/image 48.jpg" alt="" class="" />
+        </div>
+      </main>
+
+      <footer
+        class="flex flex-col justify-center items-center py-5 md:py-[10px] xl:py-[25px] px-[18px] md:px-5 xl:px-4 bg-black md:flex-row md:justify-between text-white"
+      >
+        <div class="text-xs md:text-xl">© 2021 All Rights Reserved</div>
+        <form action="" class="mt-5 md:mt-0">
+          <input
+            type="email"
+            required
+            class="py-3 pl-[10px] md:pl-3 xl:py-[14px] xl:pl-[20px] text-sm xl:text-xl bg-transparent border-2 border-[#FFB800] placeholder:text-white placeholder:text-"
+            placeholder="Email"
+          />
+          <button class="">Send</button>
+        </form>
+      </footer>
+    </div>
+    <script>
+      document.querySelector(".menu-icon").addEventListener("click", (e) => {
+        document.querySelector(".menu").classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

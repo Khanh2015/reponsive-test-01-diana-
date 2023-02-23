@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.link-menu {
+    @apply text-white md:text-black font-bold inline-block py-3 px-6 md:p-0 rounded-full hover:bg-white hover:text-black md:hover:text-red-600 duration-150 my-2 md:my-0 text-xs xl:text-xl
+}
